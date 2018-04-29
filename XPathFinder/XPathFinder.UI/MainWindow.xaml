@@ -1,0 +1,28 @@
+﻿<Window x:Class="XPathFinder.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XPathFinder.UI"
+        mc:Ignorable="d"
+        Title="{Binding Mode=OneWay}" Height="350" Width="525"
+        DataContext="{Binding Main.Title, Source={StaticResource Locator}}"  >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition>
+                <RowDefinition.Height>auto</RowDefinition.Height>
+            </RowDefinition>
+            <RowDefinition>
+                <RowDefinition.Height>*</RowDefinition.Height>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid Row="0">
+            <Menu>
+                <MenuItem>
+                    <MenuItem.Header>_</MenuItem.Header>
+                </MenuItem>
+            </Menu>
+        </Grid>
+    </Grid>
+</Window>
